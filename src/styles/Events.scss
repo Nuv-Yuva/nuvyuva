@@ -1,0 +1,53 @@
+// color: #f3f3f7;
+
+.event-wrapper {
+    // height: 860px;
+    width: 100%;
+    // max-width: 1100px;
+    // border: 1px solid red;
+    // margin-top: 1rem;
+    .title {
+        display: flex;
+        justify-content: center;
+
+        h4 {
+            color: White;
+            font-size: 3rem;
+            font-weight: 700;
+            letter-spacing: 1.4px;
+            text-transform: uppercase;
+            margin-top: 16px;
+        }
+    }
+
+    .sliders {
+        .slider-container {
+            // padding: 1rem 2rem;
+            width: 100%;
+            // border:1px solid red;
+            display: flex;
+            justify-content: center;
+            margin-top: 2rem;
+
+            .btn-body{
+
+                display: flex;
+                justify-content: center;
+                .slider-btn {
+                    background: #60b8d5 !important;
+    
+                    font-size: 1rem !important;
+                    color: #010606 !important;
+                    border: none !important;
+                }
+            }
+
+        }
+    }
+}
+
+
+// over-writing swiper css
+.swiper {
+    min-height: 34rem !important;
+}
