@@ -1,3 +1,4 @@
+@import url("https://fonts.googleapis.com/css2?family=Poppins&family=Roboto&display=swap");
 .event-wrapper {
   width: 100%;
 }
@@ -31,6 +32,10 @@
   margin-top: 2rem;
 }
 
+.event-wrapper .sliders .slider-container .card-title, .event-wrapper .sliders .slider-container .card-desc, .event-wrapper .sliders .slider-container .card-txt {
+  font-family: 'Poppins', sans-serif;
+}
+
 .event-wrapper .sliders .slider-container .btn-body {
   display: -webkit-box;
   display: -ms-flexbox;
@@ -49,5 +54,19 @@
 
 .swiper {
   min-height: 34rem !important;
+}
+
+@media only screen and (min-width: 768px) and (max-width: 1024px) {
+  .event-wrapper .title h4 {
+    font-size: 1.8rem;
+    margin-top: 4rem !important;
+  }
+}
+
+@media only screen and (max-width: 600px) {
+  .event-wrapper .title h4 {
+    font-size: 1.2rem;
+    margin-top: 4rem !important;
+  }
 }
 /*# sourceMappingURL=Events.css.map */

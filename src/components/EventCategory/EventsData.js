@@ -145,14 +145,15 @@ export const EventsData = [
                 "name" : "Aaja Nachle",
                 "description" : "It's the time to disco",
                 "price" : "100 PP",
-                "group" : true
+                "group" : "Group Event"
             },
             {
                 "image" : require("../images/webp/music.webp"),
                 "name" : "Yuva Studio",
                 "description" : "Bless us with your lovely tone.",
                 "price" : "100 PP",
-                "group" : true
+                "group" : "Group Event"
+
             },
             {
                 "image" : require("../images/webp/fashion_show.webp"),
@@ -166,21 +167,21 @@ export const EventsData = [
                 "name" : "Oscar Academy",
                 "description" : "Don't explain, it's time to express.",
                 "price" : "100 PP",
-                "group" : true
+                "group" : "Group Event"
             },
             {
                 "image" : require("../images/webp/band_show.webp"),
                 "name" : "Rock with Band",
                 "description" : "So who are the next backstreet boys?",
                 "price" : "100 PP",
-                "group" : true
+                "group" : "Group Event"
             },
             {
                 "image" : require("../images/webp/rangoli.webp"),
                 "name" : "Rango ki mehfil",
                 "description" : "kuch Rang apne hunar ke.",
                 "price" : "50 PP",
-                "group" : true
+                "group" : "Group Event"
             },
             {
                 "image" : require("../images/webp/painting.webp"),

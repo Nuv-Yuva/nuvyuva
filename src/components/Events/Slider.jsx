@@ -2,10 +2,15 @@ import React, { useLayoutEffect, useState } from 'react'
 
 import { Swiper, SwiperSlide } from "swiper/react";
 
+import { Autoplay } from 'swiper';
 // Import Swiper styles
 import "swiper/css";
 import "swiper/css/free-mode";
 import "swiper/css/pagination";
+import "swiper/css/autoplay"
+
+
+
 
 // import required modules
 import { FreeMode, Pagination } from "swiper";
@@ -39,19 +44,40 @@ const Slider = ({ Events }) => {
     //     setSlidesViewCount(false)
     // }
 
+    // SwiperCore.use([Autoplay])
+
+
 
 
     return (
         <>
             <Swiper
-                slidesPerView={3}
+                modules={[FreeMode, Pagination,Autoplay]}
+
+                breakpoints={{
+                    640: {
+                        width: 640,
+                        slidesPerView: 1,
+                    },
+                    768: {
+                        width: 768,
+                        slidesPerView: 2,
+                    },
+                    1024:{
+                        slidesPerView: 3,
+                    },
+                    1440:{
+                        slidesPerView: 3,
+                    },
+                  
+                }}
+                autoplay={{ delay: 3000 }}
                 spaceBetween={20}
                 freeMode={true}
                 pagination={{
                     clickable: true,
                 }}
-                modules={[FreeMode, Pagination]}
-            // className="mySwiper"
+                className="mySwiper"
             >
 
 
@@ -67,26 +93,26 @@ const Slider = ({ Events }) => {
                             <div className="slider-container" >
 
 
-                                <Card style={{ width: '24rem', backgroundColor: '#052c39', color: 'white',maxHeight:'28rem' }}>
-                                    <Card.Img style={{height:'18rem'}} variant="top" src={image} />
+                                <Card style={{ width: '24rem', backgroundColor: '#052c39', color: 'white', height: '28rem' }}>
+                                    <Card.Img  variant="top" src={image} />
                                     <Card.Body>
-                                        <Card.Title align="center">{name}</Card.Title>
-                                        <Card.Text align="center">
+                                        <Card.Title className="card-title" align="center">{name}</Card.Title>
+                                        <Card.Text className="card-desc" align="center">
                                             {description}
                                         </Card.Text>
-                                        <Card.Text align="center">
-                                            {price}
-                                        </Card.Text>
+                                        <p className="card-txt" align="center">
+                                            Rs.{price}
+                                        </p>
 
                                         {group && (
 
-                                        <Card.Text align="center">
-                                            {group}/{size}
-                                        </Card.Text>
+                                            <p className="card-txt" align="center">
+                                                {group} {size && (`/${size}`)}
+                                            </p>
                                         )}
                                         <div className="btn-body">
 
-                                            <Button onClick={() => window.open("https://www.nuv.ac.in/cpe-regn/", "_self")} className="slider-btn" variant="primary">Register</Button>
+                                            <Button onClick={() => window.open("https://www.nuv.ac.in/cpe-regn/")} className="slider-btn" variant="primary">Register</Button>
                                         </div>
                                     </Card.Body>
                                 </Card>
