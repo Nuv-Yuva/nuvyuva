@@ -1,19 +1,22 @@
-import './App.css'
-import About from './components/About/About'
-import Events from './components/Events/Events'
-import Footer from './components/Footer/Footer'
-import Highlights from './components/Highlights/Highlights'
+import "./App.css";
+import About from "./components/About/About";
+import Events from "./components/Events/Events";
+import Footer from "./components/Footer/Footer";
+import Highlights from "./components/Highlights/Highlights";
+import Navbar from "./components/Navbar/Navbar";
+import Hero from "./components/Hero/hero";
 
-function App() {  
-
+function App() {
   return (
-    <div className="App">
+    <>
+      <Navbar />
+      <Hero />
       <About />
       <Events />
       <Highlights />
-      <Footer />      
-    </div>
-  )
+      <Footer />
+    </>
+  );
 }
 
-export default App
+export default App;

@@ -13,10 +13,12 @@ const Events = () => {
   return (
     <div className='events'>
         <div className="event-heading">
-            <h2>Events</h2>
+            EVENTS
         </div>        
         <div className="events-cards">
-          <Carousel slides={slides} autoplay={true} interval={2000} arrows={true}/>
+          <Carousel slides={slides} autoplay={true} interval={2000} arrows={true}>
+            <div className="layer"></div>
+          </Carousel>
         </div>
     </div>
   )
