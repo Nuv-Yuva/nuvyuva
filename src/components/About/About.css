@@ -1,40 +1,38 @@
 .about {
-  background-color: #000015;
-  padding: 15px;
-  height: auto;
-  overflow: auto;
   display: flex;
-  color: white;  
-}
-.img{
-    align-items: center;
-    align-self: center;
-    align-content: center;
-}
-
-.about-img {
-  width: 300px;
-  height: auto;
-  float: left;
-  padding: 100px ;
-}
-
-.about-content {
-  float: right;
   align-items: center;
-  padding: 0px 300px;  
+}
+
+.img{
+  padding-top: 100px;
+  padding-bottom: 100px;
+  padding-left: 150px;
+  padding-right: 150px;
+}
+
+.about-img{
+  padding: 10px;
+  height: 100px;
+}
+
+.about-content{
+  color: white;
+  padding: 10px;
+  
 }
 
 .about-heading{
-  float: left;
+  text-align: left;
+  font-size: 30px;
 }
 
 .about-info{
-  margin-top: 80px;
+  padding-left: 10px;
+  padding-right: 10px;
 }
 
-.about-btn {
-  grid-area: website;
+
+.about-btn {  
   width: 100%;
   color: #000015;
   background: #60b8d5;
