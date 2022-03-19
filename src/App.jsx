@@ -1,14 +1,21 @@
 import "./App.css";
-import Hero from "./component/Hero/hero";
-import Navbar from "./component/Navbar/navbar";
-import { BrowserRouter as Router } from "react-router-dom";
+import About from "./components/About/About";
+import Events from "./components/Events/Events";
+import Footer from "./components/Footer/Footer";
+import Highlights from "./components/Highlights/Highlights";
+import Navbar from "./components/Navbar/Navbar";
+import Hero from "./components/Hero/hero";
 
 function App() {
   return (
-    <Router>
-<Navbar/>
-       <Hero/>
-    </Router>
+    <>
+      <Navbar />
+      <Hero />
+      <About />
+      <Events />
+      <Highlights />
+      <Footer />
+    </>
   );
 }
 

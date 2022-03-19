@@ -1,0 +1,55 @@
+.about {
+  background-color: #000015;
+  padding: 15px;
+  height: 100vh;
+  overflow: auto;
+  display: flex;
+  color: white;  
+  margin: 0%;
+}
+
+.img{
+    align-items: center;
+    align-self: center;
+    align-content: center;
+}
+
+.about-img {
+  width: 300px;
+  height: auto;
+  float: left;
+  padding: 100px ;
+}
+
+.about-content {
+  float: right;
+  align-items: center;
+  padding: 0px 300px;  
+}
+
+.about-heading{
+  float: left;
+}
+
+.about-info{
+  margin-top: 80px;
+}
+
+.about-btn {
+  grid-area: website;
+  width: 100%;
+  color: #000015;
+  background: #60b8d5;
+  padding: 10px;
+  transition: all 0.2s ease-in-out;
+  cursor: pointer;
+  margin: auto;
+  width: 200px;
+  border-radius: 30px;
+  font-weight: bold;
+}
+.about-btn:hover {
+  transition: all 0.2s ease-in-out;
+  background: #139fcd;
+  color: #031d26;
+}
