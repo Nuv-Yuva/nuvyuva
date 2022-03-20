@@ -52,7 +52,7 @@ const Slider = ({ Events }) => {
     return (
         <>
             <Swiper
-                modules={[FreeMode, Pagination,Autoplay]}
+                modules={[FreeMode, Pagination, Autoplay]}
 
                 breakpoints={{
                     640: {
@@ -63,15 +63,18 @@ const Slider = ({ Events }) => {
                         width: 768,
                         slidesPerView: 2,
                     },
-                    1024:{
+                    1024: {
+                        width: 1024,
                         slidesPerView: 3,
                     },
-                    1440:{
+                    1440: {
+                        width: 1440,
+
                         slidesPerView: 3,
                     },
-                  
+
                 }}
-                autoplay={{ delay: 3000 }}
+                autoplay={{ delay: 5000 }}
                 spaceBetween={20}
                 freeMode={true}
                 pagination={{
@@ -93,28 +96,46 @@ const Slider = ({ Events }) => {
                             <div className="slider-container" >
 
 
-                                <Card style={{ width: '24rem', backgroundColor: '#052c39', color: 'white', height: '28rem' }}>
-                                    <Card.Img  variant="top" src={image} />
+                                <Card className="card" style={{ width: '24rem', backgroundColor: '#052c39', color: 'white', height: '31rem' }}>
+
+
+
+                                    <Card.Img className='card-img' variant="top" src={image} />
                                     <Card.Body>
                                         <Card.Title className="card-title" align="center">{name}</Card.Title>
+
                                         <Card.Text className="card-desc" align="center">
                                             {description}
                                         </Card.Text>
-                                        <p className="card-txt" align="center">
-                                            Rs.{price}
-                                        </p>
 
-                                        {group && (
+                                        <div className="details">
 
-                                            <p className="card-txt" align="center">
-                                                {group} {size && (`/${size}`)}
+                                            <p className="card-txt " align="center">
+                                                Rs.{price}
                                             </p>
-                                        )}
-                                        <div className="btn-body">
 
-                                            <Button onClick={() => window.open("https://www.nuv.ac.in/cpe-regn/")} className="slider-btn" variant="primary">Register</Button>
+                                            {group ? (
+
+                                                <p className="card-txt small-txt" align="center">
+                                                    {group} {size && (`/${size}`)}
+                                                </p>
+                                            ) : <p className='dummy-txt'>None</p>}
                                         </div>
+
+
                                     </Card.Body>
+                                    <div className="btn-body">
+
+                                        <button onClick={() => window.open("https://www.nuv.ac.in/cpe-regn/")} className="slider-btn" variant="primary">Register</button>
+                                    
+                                    </div>
+
+
+
+
+
+
+
                                 </Card>
 
 

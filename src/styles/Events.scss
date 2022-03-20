@@ -1,5 +1,5 @@
 // color: #f3f3f7;
-@import url('https://fonts.googleapis.com/css2?family=Poppins&family=Roboto&display=swap');
+@import url("https://fonts.googleapis.com/css2?family=Poppins&family=Roboto&display=swap");
 
 .event-wrapper {
     width: 100%;
@@ -24,59 +24,88 @@
             justify-content: center;
             margin-top: 2rem;
 
-            .card-title,  .card-desc , .card-txt{
-                font-family: 'Poppins', sans-serif;
-
-            }
-
-         
-            .btn-body{
-
-                display: flex;
-                justify-content: center;
-                .slider-btn {
-                    background: #60b8d5 !important;
-    
-                    font-size: 1rem !important;
-                    color: #010606 !important;
-                    border: none !important;
+            .card {
+                border-top-right-radius: 8px;
+                border-top-left-radius: 8px;
+                // border: 1px solid red;
+                .card-img {
+                    border-top-right-radius: 8px;
+                    border-top-left-radius: 8px;
+                    
                 }
             }
+            .card-title,
+            .card-desc,
+            .card-txt {
+                font-family: "Poppins", sans-serif;
+            }
 
+            .card-desc {
+                height: 5rem;
+            }
+
+            .details {
+                // display: flex;
+                // justify-content: space-between;
+                // border: 1px solid red;
+                height: 4rem;
+            }
+
+            .small-txt {
+                font-size: 0.8rem;
+            }
+            .dummy-txt {
+                margin-top: 0;
+                margin-bottom: 1rem;
+                display: none;
+            }
+        }
+
+        .btn-body {
+            display: flex;
+            justify-content: center;
+            .slider-btn {
+                width: 100%;
+                background: #60b8d5 !important;
+
+                font-size: 1rem !important;
+                color: #010606 !important;
+                border: none !important;
+                border-radius: none !important;
+                padding: 0.4rem;
+                border-bottom-left-radius: 8px;
+                border-bottom-right-radius: 8px;
+            }
+            .btn {
+                border-radius: none !important;
+            }
         }
     }
 }
-
 
 // over-writing swiper css
 .swiper {
-    min-height: 34rem !important;
+    min-height: 36rem !important;
 }
 
-
-@media only screen and (min-width: 768px) and (max-width:1024px) {
-
-  .event-wrapper{
-
-    .title{
-        h4{
-            font-size: 1.8rem;
-            margin-top: 4rem !important;
+@media only screen and (min-width: 768px) and (max-width: 1024px) {
+    .event-wrapper {
+        .title {
+            h4 {
+                font-size: 1.8rem;
+                margin-top: 4rem !important;
+            }
         }
     }
-  }
-
 }
 
 @media only screen and (max-width: 600px) {
-.event-wrapper{
-
-    .title{
-        h4{
-            font-size: 1.2rem;
-            margin-top: 4rem !important;
+    .event-wrapper {
+        .title {
+            h4 {
+                font-size: 1.2rem;
+                margin-top: 4rem !important;
+            }
         }
     }
-}
-
 }
