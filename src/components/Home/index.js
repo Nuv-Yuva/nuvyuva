@@ -8,7 +8,6 @@ import { BodyGradient } from "./HomeElements";
 import { EventsData } from "../EventCategory/EventsData";
 import Footer from "../Footer";
 import Members from "../Members/Members";
-import Events from '../Events/Events'
 
 const Home = () => {
   const [isOpen, setIsOpen] = useState(false);
@@ -23,7 +22,6 @@ const Home = () => {
       <Countdown />
       <BodyGradient>
         {/* <EventCategory {...EventsData} /> */}
-        <Events />
         <Highlights />
         <Members />
       </BodyGradient>
