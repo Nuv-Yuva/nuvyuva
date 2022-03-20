@@ -1,0 +1,82 @@
+// color: #f3f3f7;
+@import url('https://fonts.googleapis.com/css2?family=Poppins&family=Roboto&display=swap');
+
+.event-wrapper {
+    width: 100%;
+    .title {
+        display: flex;
+        justify-content: center;
+
+        h4 {
+            color: White;
+            font-size: 3rem;
+            font-weight: 700;
+            letter-spacing: 1.4px;
+            text-transform: uppercase;
+            margin-top: 16px;
+        }
+    }
+
+    .sliders {
+        .slider-container {
+            width: 100%;
+            display: flex;
+            justify-content: center;
+            margin-top: 2rem;
+
+            .card-title,  .card-desc , .card-txt{
+                font-family: 'Poppins', sans-serif;
+
+            }
+
+         
+            .btn-body{
+
+                display: flex;
+                justify-content: center;
+                .slider-btn {
+                    background: #60b8d5 !important;
+    
+                    font-size: 1rem !important;
+                    color: #010606 !important;
+                    border: none !important;
+                }
+            }
+
+        }
+    }
+}
+
+
+// over-writing swiper css
+.swiper {
+    min-height: 34rem !important;
+}
+
+
+@media only screen and (min-width: 768px) and (max-width:1024px) {
+
+  .event-wrapper{
+
+    .title{
+        h4{
+            font-size: 1.8rem;
+            margin-top: 4rem !important;
+        }
+    }
+  }
+
+}
+
+@media only screen and (max-width: 600px) {
+.event-wrapper{
+
+    .title{
+        h4{
+            font-size: 1.2rem;
+            margin-top: 4rem !important;
+        }
+    }
+}
+
+}
