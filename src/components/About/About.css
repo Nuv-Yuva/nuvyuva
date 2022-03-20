@@ -1,6 +1,7 @@
 .about {
   display: flex;
   align-items: center;
+  background-color: #000015;
 }
 
 .img{
@@ -12,23 +13,27 @@
 
 .about-img{
   padding: 10px;
-  height: 100px;
+  height: 150px;
 }
 
 .about-content{
   color: white;
-  padding: 10px;
-  
+  padding: 10px;  
 }
 
 .about-heading{
+  padding: 5px;
   text-align: left;
   font-size: 30px;
+  margin-top: 10px;
+  margin-bottom: 10px;
 }
 
 .about-info{
   padding-left: 10px;
   padding-right: 10px;
+  margin-top: 20px;
+  margin-bottom: 20px;
 }
 
 
@@ -42,7 +47,7 @@
   margin: auto;
   width: 200px;
   border-radius: 30px;
-  font-weight: bold;
+  font-weight: bold;  
 }
 .about-btn:hover {
   transition: all 0.2s ease-in-out;
