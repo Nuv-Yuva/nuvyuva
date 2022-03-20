@@ -2,7 +2,12 @@ import React from "react";
 import ReactDOM from "react-dom";
 import App from "./App";
 import { BrowserRouter as Router, Routes, Route} from "react-router-dom";
-import CulturalEvents from "./components/CulturalEvents/CulturalEvents";
+import TechnicalEvents from "./pages/TechnicalEvents";
+import Workshops from "./pages/Workshops";
+import GamingEvents from "./pages/GamingEvents";
+import CulturalEvents from "./pages/CulturalEvents";
+import SportEvents from "./pages/SportEvents";
+
 
 ReactDOM.render(
   <React.StrictMode>

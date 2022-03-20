@@ -1,0 +1,13 @@
+.sportevents {
+    background-color: #000015;
+    min-height: 100vh;
+    padding: 30px 0px 100px;
+  }
+  
+.sportevents-heading {
+text-align: center;
+color: white;
+margin: 40px;
+font-size: 2rem;
+font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+}
