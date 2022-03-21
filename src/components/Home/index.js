@@ -4,6 +4,7 @@ import Navbar from "../Navbar";
 import EventCategory from "../EventCategory";
 import Countdown from "../Countdown";
 import Highlights from "../Highlights";
+import Stats from "../Stats";
 import { BodyGradient } from "./HomeElements";
 import { EventsData } from "../EventCategory/EventsData";
 import Footer from "../Footer";
@@ -24,6 +25,7 @@ const Home = () => {
       <BodyGradient>
         <EventCategory {...EventsData} />
         <Highlights />
+        <Stats />
         <Members />
         <GoogleMaps />
       </BodyGradient>
