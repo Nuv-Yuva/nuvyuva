@@ -1,24 +1,27 @@
 .about {
   display: flex;
   align-items: center;
+  justify-content: space-around;
   background-color: #000015;
+  width: 100%;
+  padding: 1rem 1.5rem 5rem 1.5rem;
 }
 
 .img{
-  padding-top: 100px;
-  padding-bottom: 100px;
-  padding-left: 150px;
-  padding-right: 150px;
+  width: 30%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
 }
 
 .about-img{
-  padding: 10px;
-  height: 150px;
+  width: 100%;
+  height: auto;
 }
 
 .about-content{
+  width: 50%;
   color: white;
-  padding: 10px;  
 }
 
 .about-heading{
@@ -53,4 +56,32 @@
   transition: all 0.2s ease-in-out;
   background: #139fcd;
   color: #031d26;
+}
+
+@media screen and (max-width: 50rem) {
+    .about-info{
+      font-size: 0.8rem;
+    }
+}
+
+@media screen and (max-width: 40rem) {
+  .about{
+    flex-direction: column;
+    padding-top: 4rem;
+  }
+  .img{
+    width: 100%;
+    margin-bottom: 3rem;
+  }
+  .about-img{
+    width: 40%;
+  }
+  .about-content{
+    text-align: center;
+    width: 100%;
+    padding: 0 2rem;
+  }
+  .about-heading{
+    text-align: center;
+  }
 }
