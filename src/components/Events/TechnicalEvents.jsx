@@ -1,20 +1,18 @@
 import React from 'react'
-import '../../styles/Events.css'
-import Slider from './Slider'
 import { EventsData } from '../EventCategory/EventsData'
-import './styles/TechnicalEvents.css'
-import { styles } from './styles/TechnicalElements'
+import './styles/Events.css'
+import { styles } from './styles/Events'
 import { Row, Col, Container, Card, Button } from "react-bootstrap"
 
 const TechnicalEvents = () => {
     return (
         <>
-            <div className='technicalevents'>
+            <div className='events'>
                 {EventsData.map(data => {
                     return (
-                        <div className="event-wrapper" key={data.id}>
-                            <div className="title">
-                                <h4>{data.name}</h4>
+                        <>
+                            <div className='heading'>
+                                <h1>{data.name}</h1>
                             </div>
                             <Row md={2}>
                             {data.events.map(event => {
@@ -30,17 +28,20 @@ const TechnicalEvents = () => {
                                                 />
                                                 <Card.Body style={styles.card_body}>
                                                     <Card.Title style={styles.card_title}>{event.name}</Card.Title>
-                                                    <Card.Title style={styles.card_subtitle} className='card_subtitle'>
-                                                        {event.price}
-                                                    </Card.Title>
                                                     <Card.Text style={styles.card_description}>{event.description}</Card.Text>
+                                                    <Card.Subtitle style={styles.card_subtitle} className='card_subtitle'>
+                                                        {event.price}
+                                                    </Card.Subtitle>
+                                                    <Card.Text style={styles.card_description}>{event.group}</Card.Text>
+                                                    <Card.Text style={styles.card_description}>{event.size}</Card.Text>
                                                 </Card.Body>
+                                                <Button style={styles.card_button} onClick={() => window.open("https://www.nuv.ac.in/cpe-regn/", "_self")}>Register Now</Button>
                                             </Card>
                                         </Col>
                                 )
                             })}
                             </Row>
-                        </div>
+                        </>
                     )
                 })[0]}
             </div>

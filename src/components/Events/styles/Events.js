@@ -8,7 +8,7 @@ export const styles = {
       justifyContent: "center",
       alignItem: "center",
   
-      padding: "0.8rem",
+      padding: "2rem",
     },
     header: {
       display: "flex",
@@ -36,7 +36,7 @@ export const styles = {
       borderTopLeftRadius: "20px",
       borderBottomRightRadius: "20px",
       borderBottomLeftRadius: "20px",
-      backgroundColor: "black",
+      backgroundColor: "#130634",
       padding: "0rem",
     },
 
@@ -50,13 +50,7 @@ export const styles = {
       justifyContent: "center",
       alignItem: "center",
       color: " #f3f3f7",
-    },
-    card_subtitle: {
-      fontFamily: "'Courier New' , monospace ",
-      display: "flex",
-      justifyContent: "center",
-      alignItem: "center",
-      color: " #f3f3f7",
+      textTransform: "uppercase",
     },
 
     card_description: {
@@ -65,4 +59,25 @@ export const styles = {
       alignItem: "center",
       color: " #f3f3f7",
     },
+
+    card_subtitle: {
+      fontFamily: "'Courier New' , monospace ",
+      fontSize: "1.5rem",
+      fontWeight: "bold",
+      display: "flex",
+      justifyContent: "center",
+      alignItem: "center",
+      color: "#a30a8d",
+    },
+
+    card_button: {
+      width: "100%",
+      background: "#130634",
+      fontSize: "1rem",
+      fontWeight: "bold",
+      borderColor: "#a30a8d", 
+      color: "#a30a8d",
+      borderBottomLeftRadius: "20px",
+      borderBottomRightRadius: "20px",
+    }
   };

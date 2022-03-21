@@ -1,28 +1,47 @@
 import React from 'react'
-import '../../styles/Events.css'
-import Slider from './Slider'
 import { EventsData } from '../EventCategory/EventsData'
-import './styles/SportEvents.css'
+import './styles/Events.css'
+import { styles } from './styles/Events'
+import { Row, Col, Container, Card, Button } from "react-bootstrap"
 
-const SportEvents = () => {
+const SportsEvents = () => {
     return (
         <>
-            <div className='sportevents'>
-                {EventsData.map((val, index) => {
-
-                    const { id, name, image, events } = val
-
-                    console.log(events)
-
+            <div className='events'>
+                {EventsData.map(data => {
                     return (
-                        <div className="event-wrapper" key={id}>
-                            <div className="title">
-                                <h4>{name}</h4>
+                        <>
+                            <div className='heading'>
+                                <h1>{data.name}</h1>
                             </div>
-                            <div className="sliders">
-                                <Slider Events={events} />
-                            </div>
-                        </div>
+                            <Row md={2}>
+                            {data.events.map(event => {
+                                return (
+                                        <Col style={styles.col_card}>
+                                            <Card style={styles.card} className="card">
+                                                <Card.Img
+                                                    style={styles.card_image}
+                                                    className="card-img"
+                                                    variant="top"
+                                                    // height="350rem"
+                                                    src={event.image}
+                                                />
+                                                <Card.Body style={styles.card_body}>
+                                                    <Card.Title style={styles.card_title}>{event.name}</Card.Title>
+                                                    <Card.Text style={styles.card_description}>{event.description}</Card.Text>
+                                                    <Card.Subtitle style={styles.card_subtitle} className='card_subtitle'>
+                                                        {event.price}
+                                                    </Card.Subtitle>
+                                                    <Card.Text style={styles.card_description}>{event.group}</Card.Text>
+                                                    <Card.Text style={styles.card_description}>{event.size}</Card.Text>
+                                                </Card.Body>
+                                                <Button style={styles.card_button} onClick={() => window.open("https://www.nuv.ac.in/cpe-regn/", "_self")}>Register Now</Button>
+                                            </Card>
+                                        </Col>
+                                )
+                            })}
+                            </Row>
+                        </>
                     )
                 })[4]}
             </div>
@@ -30,4 +49,4 @@ const SportEvents = () => {
     )
 }
 
-export default SportEvents
+export default SportsEvents
