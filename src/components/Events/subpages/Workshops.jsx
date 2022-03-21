@@ -1,24 +1,24 @@
 import React from 'react'
 import { useNavigate } from 'react-router-dom';
-import { EventsData } from '../EventCategory/EventsData'
-import { styles } from './styles/EventsStyles'
+import { EventsData } from '../../EventCategory/EventsData'
+import { styles } from '../styles/EventsStyles'
 import { Row, Col, Container, Card, Button } from "react-bootstrap"
 import { 
-    Body,
+    Wrapper,
     Header,
     Heading, 
     BackButton,
-} from './styles/EventsElements'
+} from '../styles/EventsElements'
 import {BiArrowBack} from 'react-icons/bi';
 
 
-const CulturalEvents = () => {
+const Workshops = () => {
 
     const navigate = useNavigate()
 
     return (
         <>
-            <Body>
+            <Wrapper>
                 {EventsData.map(data => {
                     return (
                         <>
@@ -35,7 +35,6 @@ const CulturalEvents = () => {
                                                     style={styles.card_image}
                                                     className="card-img"
                                                     variant="top"
-                                                    // height="350rem"
                                                     src={event.image}
                                                 />
                                                 <Card.Body style={styles.card_body}>
@@ -55,10 +54,10 @@ const CulturalEvents = () => {
                             </Row>
                         </>
                     )
-                })[3]}
-            </Body>
+                })[1]}
+            </Wrapper>
         </>
     )
 }
 
-export default CulturalEvents
+export default Workshops

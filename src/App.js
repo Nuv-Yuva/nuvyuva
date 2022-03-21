@@ -2,11 +2,11 @@ import React from "react";
 import { Routes, Route } from "react-router-dom";
 import Home from "./components/Home";
 import About from "./components/About";
-import TechnicalEvents from "./components/Events/TechnicalEvents";
-import Workshops from "./components/Events/Workshops";
-import GamingEvents from "./components/Events/GamingEvents";
-import CulturalEvents from "./components/Events/CulturalEvents";
-import SportEvents from "./components/Events/SportEvents";
+import TechnicalEvents from "./components/Events/subpages/TechnicalEvents";
+import Workshops from "./components/Events/subpages/Workshops";
+import GamingEvents from "./components/Events/subpages/GamingEvents";
+import CulturalEvents from "./components/Events/subpages/CulturalEvents";
+import SportEvents from "./components/Events/subpages/SportEvents";
 
 
 const App = () => {

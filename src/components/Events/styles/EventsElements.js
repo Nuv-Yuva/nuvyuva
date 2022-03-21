@@ -1,16 +1,17 @@
 import styled from 'styled-components';
 
-export const Body = styled.body`
+export const Wrapper = styled.div`
     background-color: #000015;
     min-height: 100vh;
-    padding: 30px 0px 100px;
+    overflow-X: hidden;
 `;
 
 export const Header = styled.header`
     background: #130634;
-    height: 60px;
-    margin-top: -60px;
+    height: 80px;
+    margin-top: -80px;
     padding: 2rem;
+    margin-bottom: 5rem;
     display: flex;
     justify-content: center;
     align-items: center;
@@ -21,6 +22,8 @@ export const Header = styled.header`
 
     @media screen and (max-width: 960px) {
         transition: 1s all ease;
+        height: 60px;
+        margin-top: -60px;
     }
 `;
 
@@ -42,7 +45,10 @@ export const Heading = styled.h1`
 `;
 
 export const BackButton = styled.div`
-    justify-self: flex-start;
+    display: block;
+    position: absolute;
+    top: 0.5rem;
+    left: 0.5rem;
     align-items: center;
     text-align: center;
     justify-content: center;
@@ -50,13 +56,14 @@ export const BackButton = styled.div`
     border-radius: 1rem;
     border: 0.2rem solid #a30a8d;
     background: #130634;
-    width: 50px;
-    padding: 0.5rem;
-    margin-right: 1rem;
+    width: 4rem;
+    padding: 1rem;
     transition: all 0.2s ease-in-out;
     cursor: pointer;
 
     @media screen and (max-width: 768px) {
+        padding: 0.5rem;
+        width: 3rem;
     }
 
     &:hover {

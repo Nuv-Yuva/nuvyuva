@@ -8,6 +8,7 @@ import { BodyGradient } from "./HomeElements";
 import { EventsData } from "../EventCategory/EventsData";
 import Footer from "../Footer";
 import Members from "../Members/Members";
+import Events from "../Events/Events";
 
 const Home = () => {
   const [isOpen, setIsOpen] = useState(false);
@@ -20,6 +21,7 @@ const Home = () => {
       <Sidebar isOpen={isOpen} toggle={toggle} />
       <Navbar toggle={toggle} />
       <Countdown />
+      <Events />
       <BodyGradient>
         {/* <EventCategory {...EventsData} /> */}
         <Highlights />
