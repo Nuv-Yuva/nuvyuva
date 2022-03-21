@@ -1,19 +1,31 @@
 import React from 'react'
+import { useNavigate } from 'react-router-dom';
 import { EventsData } from '../EventCategory/EventsData'
-import './styles/Events.css'
-import { styles } from './styles/Events'
+import { styles } from './styles/EventsStyles'
 import { Row, Col, Container, Card, Button } from "react-bootstrap"
+import { 
+    Body,
+    Header,
+    Heading, 
+    BackButton,
+} from './styles/EventsElements'
+import {BiArrowBack} from 'react-icons/bi';
 
-const SportsEvents = () => {
+
+const SportEvents = () => {
+
+    const navigate = useNavigate()
+
     return (
         <>
-            <div className='events'>
+            <Body>
                 {EventsData.map(data => {
                     return (
                         <>
-                            <div className='heading'>
-                                <h1>{data.name}</h1>
-                            </div>
+                            <Header>
+                                    <BackButton onClick={() => navigate(-1)}><BiArrowBack /></BackButton>
+                                    <Heading>{data.name}</Heading>
+                            </Header>
                             <Row md={2}>
                             {data.events.map(event => {
                                 return (
@@ -44,9 +56,9 @@ const SportsEvents = () => {
                         </>
                     )
                 })[4]}
-            </div>
+            </Body>
         </>
     )
 }
 
-export default SportsEvents
+export default SportEvents
