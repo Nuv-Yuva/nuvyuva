@@ -13,6 +13,7 @@ import Events from "../Events/Events";
 import About from "../About";
 import Nuv from "../Nuv";
 import ScrollToTop from "react-scroll-to-top";
+import Timeline from "../Timeline/Timeline";
 
 const Home = () => {
   const [isOpen, setIsOpen] = useState(false);
@@ -34,6 +35,7 @@ const Home = () => {
       </BodyGradient>
       <ScrollToTop smooth top="1000" color="#570658" viewbox="5 5 5 5" height="20" width="20"/>
       <Footer />
+      <Timeline />
     </>
   );
 };
