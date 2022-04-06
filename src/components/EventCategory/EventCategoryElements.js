@@ -13,6 +13,22 @@ export const EventCategoryContainer = styled.div`
     //     #07192f 60%,
     //     #07192f 100%
     // )};
+    position: relative;
+
+    .img1, .img2{
+        position: absolute;
+    }
+    
+    .img1{
+        top: 0;
+        left: -1rem;
+        width: 5rem;
+    }
+    .img2{
+        top: 5rem;
+        right: -5rem;
+        width: 10rem;
+    }
 
     @media screen and (max-width: 768px) {
         padding: 0 0;

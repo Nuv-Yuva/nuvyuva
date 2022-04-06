@@ -13,7 +13,7 @@ const MemCard = ({ data }) => {
                 <Card.Img
                     className="card-img"
                     variant="top"
-                    // height="350rem"
+                    // height="400rem"
                     src={imgSrc}
                 />
                 <Card.Body style={styles.card_body}>

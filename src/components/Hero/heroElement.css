@@ -1,0 +1,122 @@
+.Countdown {
+  text-align: center;
+  display: flex;
+  flex-direction: column;
+  color: #fff;
+  width: 100%;
+}
+
+.Countdown-logo {
+  height: 35vmin;
+  pointer-events: none;
+}
+
+@media (prefers-reduced-motion: no-preference) {
+  .Countdown-logo {
+    animation: App-logo-spin infinite 20s linear;
+  }
+}
+
+.Countdown-header {
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  font-size: calc(10px + 2vmin);
+  color: white;
+}
+
+.Countdown-link {
+  color: #61dafb;
+}
+
+@keyframes App-logo-spin {
+  from {
+    transform: rotate(0deg);
+  }
+  to {
+    transform: rotate(360deg);
+  }
+}
+
+.container {
+  background-position: center;
+  background-size: cover;
+  height: 100vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.timer{
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.logo {
+  width: 400px;
+}
+.clock {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: fit-content;
+}
+.clock-section {
+  flex: 1;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.clock-wrap {
+  padding: 15px;
+}
+.clock-timer {
+  font-size: 50px;
+  font-weight: bold;
+  
+}
+.clock-seperator {
+  font-size: 30px;
+}
+@media screen and (max-width: 500px) {
+  .logo {
+    width: calc(100vw - 160px);
+  }
+  .clock-timer {
+    font-size: 25px;
+  }
+  .clock-seperator,
+  .clock-txt {
+    font-size: 15px;
+  }
+}
+
+.Button {
+  border-radius: 50px;
+  background: "#010606";
+  white-space: nowrap;
+  padding: 20px 40px;
+  font-size: 40px;
+  outline: none;
+  border: none;
+  cursor: pointer;
+  display: absolute;
+  justify-content: center;
+  align-items: center;
+  transition-duration: 0.5s;
+}
+
+.Button:hover {
+  background-color: pink;
+  color: black;
+  transform: scale(1.1);
+  box-shadow: 0 0px 20px 0 rgba(255, 192, 203, 0.24);
+}
+
+.Link {
+  text-decoration: none;
+}

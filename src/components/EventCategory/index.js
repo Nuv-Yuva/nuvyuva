@@ -4,6 +4,7 @@ import Carousel from 'react-bootstrap/Carousel';
 import { EventsData } from './EventsData';
 import { FaRupeeSign } from 'react-icons/fa';
 import Image from 'react-bootstrap/Image'
+// import Circle1 from '.../assets/Circle1.png';
 import { 
     EventCategoryContainer,
     EventCategoryWrapper,
@@ -39,12 +40,15 @@ const EventCategory = ({
     darkEventSubtitle,
     darkEventDescription,
 }) => {
-
+    const Circle1 = require("../images/circles/Circle1.png");
+    console.log(Circle1)
     return (
         <div>
             {EventsData.map(data => {
                 return (
                     <EventCategoryContainer bg={bg} id={data.id}>
+                        <img src={Circle1} className="events-img1" alt="circle-png"/>
+                        <img src={Circle1} className="events-img2" alt="circle-png"/>
                         <EventCategoryWrapper>
                             <EventCategoryRow imgStart={imgStart}>
                                 <Column1 key={data.name}>

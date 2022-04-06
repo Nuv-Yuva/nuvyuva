@@ -1,0 +1,112 @@
+.container-fluid {
+  background: #000015;
+  text-align: center;
+  padding-top: 0px;
+  overflow-x: hidden;
+  height: 100vh;
+}
+
+.row {
+  align-items: flex-end;
+  align-content: flex-end;
+  margin: 20px 0px 40px;
+}
+
+.title {
+  font-size: 2rem;
+  color: #f3f3f7;
+  margin: 80px 10px 10px 10px;
+  letter-spacing: 6px;
+  font-family: "Playfair Display", serif;
+  font-size: 30px;
+}
+
+.title3 {
+  font-size: 2rem;
+  color: #f3f3f7;
+  margin: 20px 10px 40px 10px;
+  font-size: 40px;
+  letter-spacing: 6px;
+  font-family: "Playfair Display", serif;
+
+  @media screen and (max-width: 480px) {
+    font-size: 30px;
+  }
+}
+
+.head {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.title2 {
+  font-size: 2rem;
+  color: #f3f3f7;
+  margin: 20px;
+  font-size: 30px;
+  letter-spacing: 6px;
+  font-family: "Playfair Display", serif;
+}
+
+.kanan {
+  width: 1000px;
+}
+
+.col-lg-12,
+.col-sm-12,
+.col-md-12 {
+  padding: 15px 15px 0px 15px;
+  margin-bottom: -30px;
+}
+
+.image {
+  width: 300px;
+}
+
+img {
+  justify-content: center;
+  text-align: center;
+}
+
+.club{
+  width: 180px;
+}
+
+.media {
+  width: 500px;
+}
+.submedia {
+  width: 250px;
+}
+
+@media screen and (max-width: 1200px) {
+  .kanan {
+    width: 250px;
+  }
+  .col-sm-1,
+  .col-md-4 {
+    padding: 15px;
+  }
+  .image {
+    width: 250px;
+  }
+  .media {
+    width: 250px;
+  }
+}
+
+@media screen and (max-width: 640px) {
+  .title2 {
+    font-size: 25px;
+    letter-spacing: 2px;
+  }
+  .title {
+    font-size: 25px;
+    letter-spacing: 2px;
+  }
+  .image {
+    width: 250px;
+    letter-spacing: 2px;
+  }
+}

@@ -4,6 +4,7 @@
   flex-direction: column;
   color: #fff;
   background-color: #1b0644;
+  overflow-x: hidden;
 }
 
 .Countdown-logo {
@@ -48,7 +49,6 @@
   align-items: center;
   justify-content: center;
 }
-
 .logo {
   width: 400px;
 }
@@ -64,7 +64,7 @@
   justify-content: center;
 }
 .clock-wrap {
-  padding: 20px;
+  padding: 0px;
 }
 .clock-timer {
   font-size: 60px;

@@ -17,26 +17,26 @@ const Sidebar = ({ isOpen, toggle }) => {
             </Icon>
             <SidebarWrapper>
                 <SidebarMenu>
-                    <SidebarLink to='1' onClick={toggle}>
-                        Technical
+                <SidebarLink to='Countdown' onClick={toggle}>
+                        HOME
                     </SidebarLink>
-                    <SidebarLink to='2' onClick={toggle}>
-                        Workshops
+                    <SidebarLink to='about' onClick={toggle}>
+                        ABOUT
                     </SidebarLink>
-                    <SidebarLink to='3' onClick={toggle}>
-                        Gaming
-                    </SidebarLink>
-                    <SidebarLink to='4' onClick={toggle}>
-                        Cultural
-                    </SidebarLink>
-                    <SidebarLink to='5' onClick={toggle}>
-                        Sports
+                    <SidebarLink to='events' onClick={toggle}>
+                        EVENTS
                     </SidebarLink>
                     <SidebarLink to='highlights' onClick={toggle}>
-                        Highlights
+                        HIGHLIGHTS
                     </SidebarLink>
-                    <SidebarPageLink to='about' onClick={toggle}>
-                        About
+                    <SidebarPageLink to='team' onClick={toggle}>
+                        TEAM
+                    </SidebarPageLink>
+                    <SidebarPageLink to='Sponsor' onClick={toggle}>
+                        SPONSOR
+                    </SidebarPageLink>
+                    <SidebarPageLink to='nuv' onClick={toggle}>
+                        NUV
                     </SidebarPageLink>
                 </SidebarMenu>
             </SidebarWrapper>

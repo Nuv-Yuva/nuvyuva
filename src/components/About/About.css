@@ -1,0 +1,132 @@
+.about {
+  display: flex;
+  align-items: center;
+  justify-content: space-around;
+  background-color: #000015;
+  width: 100%;
+  height: 100vh;
+  padding: 2rem 1.5rem 2rem 1.5rem;
+}
+
+.container{
+  display: flex;
+    justify-content: center;
+    align-items: center;        /* for single line flex container */
+    align-content: center;  
+}
+
+.img{
+  width: 30%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.about-img{
+  width: 100%;
+  height: auto;
+}
+
+.about-content{
+  width: 40%;
+  color: white;
+}
+
+.about-heading{
+  padding: 5px;
+  text-align: left;
+  font-size: 40px;
+  margin-top: 10px;
+  margin-bottom: 10px;
+  letter-spacing: 6px;
+  position: relative;
+  font-family: playfair,serif;
+}
+
+.about-heading div{
+  position: relative;
+  z-index: 5;
+}
+
+.about-circle-img1 {
+  position: absolute;
+}
+
+.about-circle-img1{
+  top: -3rem;
+  left: -3rem;
+  width: 7rem;
+  transform: rotate(120deg);
+}
+
+.about-info{
+  padding-left: 40px;
+  padding-right: 20px;
+  margin-top: 20px;
+  margin-bottom: 50px;
+}
+
+
+.about-btn {  
+  color: #fff;
+  padding: 10px;
+  transition: all 0.2s ease-in-out;
+  cursor: pointer;
+  margin: auto;
+  width: 300px;
+  border-radius: 10px; 
+  background: linear-gradient(90deg, #B40A98 0%, #570658 100%);
+  letter-spacing: 5px;
+  margin-top: 40px;
+}
+
+.about-btn:hover {
+  transition: all 0.2s ease-in-out;
+  color: #031d26;
+}
+
+.download-link{
+  text-decoration: none;
+}
+
+@media screen and (max-width: 50rem) {
+    .about-info{
+      font-size: 0.8rem;
+      padding-left: 20px;
+      margin: 2rem 0 2rem 0; 
+    }
+    .about-heading{
+      font-size: 30px;
+    }
+    .about-img{
+      width: 120%;
+    }
+}
+
+@media screen and (max-width: 40rem) {
+  .about{
+    flex-direction: column;
+    padding-top: 2rem;
+    height: 100%;
+  }
+  .img{
+    width: 100%;
+  }
+  .about-img{
+    width: 70%;
+  }
+  .about-content{
+    text-align: center;
+    width: 100%;
+    padding: 1rem 0rem;
+  }
+  .about-heading{
+    text-align: center;
+  }
+  .about-circle-img1{
+    top: -1rem;
+    left: 20%;
+    width: 5rem;
+    transform: rotate(120deg) translate(-0%, 0%);
+  }
+}

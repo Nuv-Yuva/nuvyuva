@@ -17,6 +17,14 @@ import shivani from "./images/shivani.webp";
 import dhaval from "./images/dhaval.webp";
 import yogesh from "./images/yogesh.webp";
 import gaurav from "./images/gaurav.webp";
+import aanchal from "./images/aanchal.webp";
+import rushit from './images/rushit.webp';
+import dinesh from './images/dinesh.webp';
+import pulak from './images/pulak.webp';
+import rabichandra from './images/rabichandra.webp';
+import lipi from './images/lipi.webp';
+import manisha from './images/manisha.webp';
+import arya from "./images/arya.webp";
 
 /* Position Ids 1-Coordinators,2-Presidents,3-Committe Heads,4-Faculty */
 
@@ -28,13 +36,7 @@ export const memberData = [
     postion: "Cultural event head",
     posId: 1,
   },
-  {
-    id: 2,
-    name: "Meet",
-    imgSrc: meet,
-    postion: "Treasurer",
-    posId: 3,
-  },
+
 
   {
     id: 3,
@@ -154,5 +156,61 @@ export const memberData = [
     imgSrc: yogesh,
     postion: "Technical Committee Convener",
     posId: 4,
-  }
+  },
+  {
+    id: 19,
+    name: "Aanchal Mantry",
+    imgSrc: aanchal,
+    postion: "Decoration Head",
+    posId: 3,
+  },
+  {
+    id: 20,
+    name: "Rushit Patel",
+    imgSrc: rushit,
+    postion: "Media Head",
+    posId: 3,
+  },
+  {
+    id: 21,
+    name: "Dinesh Parmar",
+    imgSrc: dinesh,
+    postion: "Cultural Committee Facility",
+    posId: 4,
+  },
+  {
+    id: 22,
+    name: "Pulak Sanpui",
+    imgSrc: pulak,
+    postion: "Cultural Committee Facility",
+    posId: 4,
+  },
+  {
+    id: 23,
+    name: "Dr. Rabichandra Singh Elangbam",
+    imgSrc: rabichandra,
+    postion: "Cultural Committee Facility",
+    posId: 4,
+  },
+  {
+    id: 24,
+    name: "Lipi Buch",
+    imgSrc: lipi,
+    postion: "Cultural Committee Facility",
+    posId: 4,
+  },
+  {
+    id: 25,
+    name: "Manisha B",
+    imgSrc: manisha,
+    postion: "Cultural Committee Facility",
+    posId: 4,
+  },
+  // {
+  //   id: 26,
+  //   name: "Arya Shah",
+  //   imgSrc: arya,
+  //   postion: "Hackathon Head",
+  //   posId: 1,
+  // }
 ];

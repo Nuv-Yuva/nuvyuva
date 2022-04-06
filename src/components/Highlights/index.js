@@ -1,7 +1,7 @@
 import React, { useState } from 'react';
-import hackathon from '../images/highlights/hackathon_1.webp';
-import concert from '../images/highlights/concert_1.webp';
-import mun from '../images/highlights/mun_1.webp';
+import hackathon from '../images/highlights/hackathon.png';
+import concert from '../images/highlights/concert.jpeg';
+import mun from '../images/highlights/mun.jpeg';
 
 import {
     HighlightsContainer,
@@ -15,6 +15,8 @@ import {
     HighlightsButton,
 } from './HighlightsElements';
 
+const Circle1 = require("../images/circles/Circle1.png");
+
 const Highlights = () => {
     const  [hover, setHover] = useState(false)
 
@@ -23,11 +25,14 @@ const Highlights = () => {
     }
     return (
         <HighlightsContainer id='highlights'>
-            <HighlightsH1>Highlights</HighlightsH1>
+            <img src={Circle1} className="highlights-img1 circle-svgs" alt="circle-png"/>
+            <img src={Circle1} className="highlights-img2 circle-svgs" alt="circle-png"/>
+            <img src={Circle1} className="highlights-img3 circle-svgs" alt="circle-png"/>
+            <HighlightsH1>HIGHLIGHTS</HighlightsH1>
             <HighlightsWrapper>
                 <HighlightsCard>
                     <HighlightsIcon src={hackathon}/>
-                    <HighlightsH2>Hack For Change</HighlightsH2>
+                    <HighlightsH2>HACK FOR CHANGE</HighlightsH2>
                     {/* <EventsP>Description</EventsP> */}
                     <HighlightsBtnWrapper>
                         <HighlightsButton 
@@ -36,24 +41,14 @@ const Highlights = () => {
                             onMouseLeave={onHover}
                             onClick={() => window.open("https://hack-for-change.devpost.com/", "_self")}
                         >
-                            Register Now
+                            REGISTER NOW
                         </HighlightsButton>
                     </HighlightsBtnWrapper>
                 </HighlightsCard>
                 <HighlightsCard>
-                    <HighlightsIcon src={concert}/>
-                    <HighlightsH2>Concert</HighlightsH2>
+                    <HighlightsIcon src={concert} style={{}}/>
+                    <HighlightsH2>CONCERT</HighlightsH2>
                     {/* <EventsP>Description</EventsP> */}
-                    <HighlightsBtnWrapper>
-                        <HighlightsButton 
-                            to='concert' 
-                            onMouseEnter={onHover} 
-                            onMouseLeave={onHover}
-                            onClick={() => window.open("https://forms.gle/mM92w2wrtnvWiA2c9", "_self")}
-                        >
-                            Register Now
-                        </HighlightsButton>
-                    </HighlightsBtnWrapper>
                 </HighlightsCard>
                 <HighlightsCard>
                     <HighlightsIcon src={mun}/>
@@ -66,7 +61,7 @@ const Highlights = () => {
                             onMouseLeave={onHover}
                             onClick={() => window.open("https://www.nuv.ac.in/cpe-regn/", "_self")}
                         >
-                            Register Now
+                            REGISTER NOW
                         </HighlightsButton>
                     </HighlightsBtnWrapper>
                 </HighlightsCard>

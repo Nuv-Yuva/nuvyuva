@@ -6,7 +6,7 @@ body {
     font-family: 'Poppins', sans-serif;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
-  /* overflow-x: hidden; */
+  /*overflow-x: hidden; */
   /* overflow-y: hidden; */
   /* background-image: url("../bg.png");
   background-repeat: no-repeat;
@@ -20,3 +20,7 @@ code {
   font-family: source-code-pro, Menlo, Monaco, Consolas, "Courier New",
     monospace;
 }
+
+/* .circle-svgs {
+  z-index: 0;
+} */

@@ -2,7 +2,7 @@ import styled, { ServerStyleSheet } from 'styled-components';
 import { Link } from 'react-router-dom';
 
 export const FooterContainer = styled.footer`
-    background-color: #010606;
+    background-color: #000115;
     justify-content: center;
     align-items: center;
 `;

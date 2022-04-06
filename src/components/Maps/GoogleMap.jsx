@@ -12,7 +12,7 @@ import { Button, Card } from "react-bootstrap";
 
 const containerStyle = {
   width: "100%",
-  height: "400px",
+  height: "450px",
 };
 //22.294675, 73.118827
 const center = {
@@ -42,17 +42,44 @@ const GoogleMaps = () => {
           justifyItems: "center",
           alignItems: "center",
           flexDirection: "column",
+          background: "#000115",
         }}
       >
-        <div style={{ display: "block" }}>
-          <h1 style={{ color: "#f3f3f7" }}>Locations</h1>
-        </div>
         <div style={{ display: "block", margin: "10px" }}>
-          <Button onClick={() => setCenter(center)} variant="secondary">
-            Concert Ground
-          </Button>{" "}
-          <Button onClick={() => setCenter(nuv)} variant="secondary">
-            All Events
+          <h2
+            style={{
+              color: "#f3f3f7",
+              letterSpacing: "6px",
+              textAlign: "center",
+              fontFamily: 'Playfair Display',
+            }}
+          >
+            LOCATIONS
+          </h2>
+        </div>
+        <div style={{ display: "block" }}>
+          <Button
+            style={{
+              margin: "15px 15px 20px 15px",
+              border: "none",
+              background: "linear-gradient(90deg, #B40A98 0%, #570658 100%)",
+              boxShadow: "none",
+            }}
+            onClick={() => setCenter(center)}
+          >
+            CONCERT GROUND
+          </Button>
+          <Button
+            style={{
+              margin: "15px 15px 20px 15px",
+              border: "none",
+              background: "linear-gradient(90deg, #B40A98 0%, #570658 100%)",
+              boxShadow: "none",
+            }}
+            onClick={() => setCenter(nuv)}
+            variant="secondary"
+          >
+            ALL EVENTS
           </Button>
         </div>
       </div>

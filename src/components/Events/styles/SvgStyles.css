@@ -1,0 +1,74 @@
+.technicalzigzag {
+    position: absolute;
+    top: 7.8rem;
+    left: 36rem;
+    width: 21rem;
+}
+
+@media screen and (max-width: 40rem) {
+  .technicalzigzag {
+    top: 7rem;
+    left: 16%;
+    width: 15rem;
+  }
+}
+
+.workshopszigzag {
+    position: absolute;
+    top: 7.8rem;
+    left: 35rem;
+    width: 23rem;
+}
+
+@media screen and (max-width: 40rem) {
+  .workshopszigzag {
+    top: 7rem;
+    left: 11%;
+    width: 18rem;
+  }
+}
+
+.gamingzigzag {
+    position: absolute;
+    top: 7.8rem;
+    left: 39rem;
+    width: 16rem;
+}
+
+@media screen and (max-width: 40rem) {
+  .gamingzigzag {
+    top: 7rem;
+    left: 22%;
+    width: 12rem;
+  }
+}
+
+.culturalzigzag {
+    position: absolute;
+    top: 7.8rem;
+    left: 37rem;
+    width: 20rem;
+}
+
+@media screen and (max-width: 40rem) {
+  .culturalzigzag {
+    top: 7rem;
+    left: 16%;
+    width: 15rem;
+  }
+}
+
+.sportszigzag {
+    position: absolute;
+    top: 7.8rem;
+    left: 38rem;
+    width: 16rem;
+}
+
+@media screen and (max-width: 40rem) {
+  .sportszigzag {
+    top: 7rem;
+    left: 20%;
+    width: 12rem;
+  }
+}
